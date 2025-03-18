@@ -14,7 +14,7 @@ FULL_FINDINGS = False
 BLOCK_PR = True
 
 # Local server listens on
-WEBHOOK_PORT = 8080
+WEBHOOK_PORT = 8000
 
 # For the GitHub client (minimum 10)
 # Processing times exceeding the expiry time may result in unexpected behavior.

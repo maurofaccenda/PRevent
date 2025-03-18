@@ -23,10 +23,10 @@ COPY ./pyproject.toml /prevent/pyproject.toml
 # Install project dependencies with Poetry
 RUN poetry install --no-interaction --only main
 
-EXPOSE 8080
+EXPOSE 8000
 
 # Run setup.py from the ./setup directory
 RUN poetry run python -m setup.setup_container
 
 # Run the prevent application
-CMD ["poetry", "run", "uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["poetry", "run", "uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]

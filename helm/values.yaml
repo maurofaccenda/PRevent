@@ -2,7 +2,7 @@ image:
   repository: us-docker.pkg.dev/apiiro/public-images/prevent
   tag: "1.1"
 pod:
-  containerPort: 8080
+  containerPort: 8000
 resources:
   requests:
     cpu: 0.5
@@ -20,7 +20,7 @@ service:
     annotations:
     #- exampleAnnotationKey: 'exampleAnnotationValue'
   port: 80
-  targetPort: 8080
+  targetPort: 8000
 app:
   config:
     # Options secretManager: k8s, aws, azure, gcloud, vault
@@ -28,7 +28,7 @@ app:
     blockPr: false
     fpStrict: false
     fullFindings: false
-    webhookPort: 8080
+    webhookPort: 8000
     jwtExpirySeconds: 120
 networkPolicy:
   enabled: false

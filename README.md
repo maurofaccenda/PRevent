@@ -111,11 +111,11 @@ Parts 1 and 2 are handled during the interactive setup process in step 3:
 4. Start the server:
    ```bash
    # poetry
-   poetry run uvicorn src.app:app --host 0.0.0.0 --port 8080
+   poetry run uvicorn src.app:app --host 0.0.0.0 --port 8000
 
    # Or pip
    source venv/bin/activate
-   uvicorn src.app:app --host 0.0.0.0 --port 8080
+   uvicorn src.app:app --host 0.0.0.0 --port 8000
    ```
 
 

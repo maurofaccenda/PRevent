@@ -36,6 +36,6 @@ def handle_one_liners(
                                 "currently, such files are excluded from this scan. "
                                 "It's recommended to store them in a CDN or a storage service."
                 }
-                comment_detections(detection, repo, pr)
+                comment_detections([detection], repo, pr)
             return True
     return False

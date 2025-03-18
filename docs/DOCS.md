@@ -12,7 +12,7 @@
 | BLOCK_PR                  | Block merging in pull requests with detections     | user   | no       | bool                   | False   | True                 | low         |
 | FP_STRICT                 | Run only `ERROR` severity rules, exclude `WARNING` | user   | no       | bool                   | False   | True                 | low         |
 | FULL_FINDINGS             | Detect all findings instead of just the first one  | user   | no       | bool                   | False   | True                 | low         |
-| WEBHOOK_PORT              | The port on which the app listens                  | user   | no       | int                    | 8080    | 8443                 | low         |
+| WEBHOOK_PORT              | The port on which the app listens                  | user   | no       | int                    | 8000    | 8443                 | low         |
 | JWT_EXPIRY_SECONDS        | Limit the app's GitHub auth token TTL              | user   | no       | int                    | 120     | 60                   | low         |
 
 

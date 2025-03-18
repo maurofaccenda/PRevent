@@ -57,7 +57,7 @@ def determine_and_comment_scan_status(
     description = "Apiiro malicious-code scan"
     if detections:
         status = "failure"
-        comment: PullRequestComment = comment_detections(detections, pr, repo)
+        comment: PullRequestComment = comment_detections(detections, repo, pr)
         logger.info(
             f"PR #{pr.number} scan found: {json.dumps(detections)}"
         )
@@ -70,8 +70,8 @@ def determine_and_comment_scan_status(
 
 def comment_detections(
     detections: list[DetectionType],
-    pr: PullRequest,
-    repo: Repository
+    repo: Repository,
+    pr: PullRequest
 ) -> PullRequestComment:
     landmark_string = f"{repo.full_name}, PR #{pr.number}"
     comment = None

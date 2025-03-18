@@ -53,6 +53,7 @@ def health():
 
 
 if __name__ == "__main__":
+    # For FastAPI debugger
     configure_logging()
 
     uvicorn.run(
