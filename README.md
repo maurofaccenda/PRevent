@@ -1,5 +1,8 @@
 # PRevent
 
+![detection comment](https://github.com/user-attachments/assets/affffbca-1494-4160-83b6-ad0111a79bb0)
+(the tj-actions/changed-file malicious commit as would have been detected by PRevent)
+
 A self-hosted GitHub app that listens for pull request events, scans them for malicious code, and comments detections directly on the pull request.
 
 - [PRevent](#prevent)
